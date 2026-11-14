@@ -11,63 +11,134 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Solver de ECD</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineA">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>200</y>
-      <width>113</width>
-      <height>28</height>
+      <x>81</x>
+      <y>201</y>
+      <width>602</width>
+      <height>31</height>
      </rect>
     </property>
+    <layout class="QHBoxLayout" name="Horiz_Ecuacion">
+     <item>
+      <widget class="QLineEdit" name="lineA"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_y_biprima">
+       <property name="text">
+        <string> Y'' +</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineB"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_y_prima">
+       <property name="text">
+        <string> Y' +</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineC"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string> Y = 0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnResolver">
+       <property name="text">
+        <string>RESOLVER</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QLineEdit" name="lineB">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>200</y>
-      <width>113</width>
-      <height>28</height>
+      <x>80</x>
+      <y>271</y>
+      <width>166</width>
+      <height>49</height>
      </rect>
     </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_PolCaract">
+       <property name="text">
+        <string>Polinomio Caracteristico:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_R_PolCaract">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QLineEdit" name="lineC">
+   <widget class="QLabel" name="label_Raices">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>200</y>
-      <width>113</width>
-      <height>28</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnResolver">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>200</y>
-      <width>90</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelResultado">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>310</y>
-      <width>401</width>
+      <x>81</x>
+      <y>351</y>
+      <width>45</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Raices:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Resultado">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>421</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resultado:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_R_Raices">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>378</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_R_Resultado">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>448</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

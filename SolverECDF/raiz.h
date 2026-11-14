@@ -9,5 +9,6 @@ class Raiz{
     public:
         explicit Raiz(Ecuacion e) : EcD(std::move(e)) {}
         virtual ~Raiz() = default;
-        virtual std::ostream& imprimir( std::ostream& os ) const = 0;
+        virtual std::ostream& imprimir_raices( std::ostream& os) const = 0;
+        virtual std::ostream& imprimir_resultado( std::ostream& os ) const = 0;
 };

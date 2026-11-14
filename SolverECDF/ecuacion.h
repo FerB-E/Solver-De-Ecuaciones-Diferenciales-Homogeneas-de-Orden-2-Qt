@@ -1,4 +1,5 @@
 #pragma once
+#include <ostream>
 
 struct Ecuacion {
     float a, b, c;
@@ -10,4 +11,9 @@ struct Ecuacion {
         this->c = c;
         discriminante = (b * b) - (4 * a * c);
     }
+
+    std::ostream& imprimir_pol_caract( std::ostream& os){
+        return os << a << "m² + " << b << "m + " << c << " = 0";
+    }
+
 };
